@@ -34,7 +34,6 @@ How: evaluation and inducing steganography
   - Inducing stego via SFT or RL, to understand current LLMs potential and find dangerous training conditions that might lead to it. Proof-of-concept.
 - Why Reinforcement Learning (RL)? Unclear where LLMs might converge to when under optimization pressure. Interest in the indirect emergence of stego.
 
-![image](https://github.com/user-attachments/assets/82013860-11df-4ee5-a8a5-c09e39973ca6)
 
 Sources / references:
 
@@ -42,4 +41,13 @@ Sources / references:
 - Pfau et al. Let’s Think Dot by Dot: Hidden Computation in Transformer Language Models. 2024.
 - Roger and Greenblatt, ‘Preventing Language Models From Hiding Their Reasoning’. 2023
 - Motwani et al., ‘Secret Collusion Among Generative AI Agents’. 2024. Larger models are more capable.
+
+Contribution:
+
+- Artyom Karpov, https://www.artkpv.net
+- Tinuade Margaret, https://tinuademargaret.github.io/
+
+![image](https://github.com/user-attachments/assets/b62d2e3a-acd0-4411-b8f8-e6370a1a0730)
+
+![image](https://github.com/user-attachments/assets/45299670-8cd2-4d31-b642-6828293638fe)
 
