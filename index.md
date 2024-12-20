@@ -45,7 +45,8 @@ Sources / references:
 Contribution:
 
 - Artyom Karpov, https://www.artkpv.net
-- Tinuade Margaret, https://tinuademargaret.github.io/
+- Tinuade Margaret, https://tinuademargaret.github.io
+- With support from Apart Research, https://www.apartresearch.com
 
 ![image](https://github.com/user-attachments/assets/b62d2e3a-acd0-4411-b8f8-e6370a1a0730)
 
