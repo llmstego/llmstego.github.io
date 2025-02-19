@@ -26,7 +26,7 @@
 
 
   <title>The Steganographic Potentials of Language Models</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/png" href="static/images/lock.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -188,7 +188,7 @@
   <!-- End paper abstract -->
 
 
-  <!-- RL Image section -->
+  <!-- RL section -->
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
@@ -239,49 +239,6 @@
   </section>
   <!-- End image section -->
 
-
-  <!-- Image carousel -->
-  <!-- <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item"> -->
-  <!-- Your image here -->
-  <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              First image description.
-            </h2>
-          </div>
-          <div class="item"> -->
-  <!-- Your image here -->
-  <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              Second image description.
-            </h2>
-          </div>
-          <div class="item"> -->
-  <!-- Your image here -->
-  <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              Third image description.
-            </h2>
-          </div>
-          <div class="item"> -->
-  <!-- Your image here -->
-  <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              Fourth image description.
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- End image carousel -->
-
-
-
-
   <!-- RL results -->
   <section class="hero is-small is-light">
     <div class="hero-body">
@@ -291,33 +248,41 @@
           <div class="column is-8">
             <div class="content has-text-justified">
               <p>
-                We achieved reward values up to 100% for up to 15 colors (bits) when we only fine-tuned the encoder
-                tokens, while generating decoder answers.
+                Our preliminary results shows that models could improve their covert communication
+                by about 20% for 3 bits of entropy, but less in other cases.
               </p>
             </div>
           </div>
         </div>
 
         <!-- First image -->
-        <div class="columns is-centered">
+        <!-- <div class="columns is-centered">
           <div class="column is-8">
             <img src="static/images/encoding_scheme_result.jpg" alt="encoding scheme result" />
             <h4 class="subtitle has-text-centered">
-              The learned steganography scheme from the colors experiment for one fine-tuning run. Left: encoder's
-              color-to-name mapping. Right: decoder's name-to-color mapping. Frequency is indicated by a color scale
-              from orange (maximum) to blue.
+              In the direct steganography experiment, Llama-3.1 8B
+              Instruct learns to hide messages while summarizing text, under
+              GPT 3.5 Turbo supervision for both task evaluation and steganog-
+              raphy monitoring. The y-axis shows undetected accuracy (reward)
+              on a held-out validation set before (baseline) and after fine-tuning,
+              and the x-axis displays the number of distinct hidden messages,
+              including the scenario with no secret transmitted.
             </h4>
           </div>
-        </div>
+        </div> -->
 
         <!-- Second image -->
         <div class="columns is-centered">
           <div class="column is-8">
             <img src="static/images/performance_plot.png" alt="performance plot" />
             <h4 class="subtitle has-text-centered">
-              Llama-3.1 8B Instruct learns steganography in colors and direct steganography ('Dstego') experiments.
-              Y-axis shows accuracy (reward), x-axis shows distinct hidden messages (colors). Bars represent medians
-              across fine-tuning runs (sample sizes shown within) before (baselines) and after.
+              In the direct steganography experiment, Llama-3.1 8B
+              Instruct learns to hide messages while summarizing text, under
+              GPT 3.5 Turbo supervision for both task evaluation and steganog-
+              raphy monitoring. The y-axis shows undetected accuracy (reward)
+              on a held-out validation set before (baseline) and after fine-tuning,
+              and the x-axis displays the number of distinct hidden messages,
+              including the scenario with no secret transmitted.
             </h4>
           </div>
         </div>
@@ -327,35 +292,107 @@
   <!-- End RL results -->
 
 
-  <!-- Video carousel -->
-  <!-- <section class="hero is-small">
+  <!-- Image carousel -->
+  <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
-        <h2 class="title is-3">Another Carousel</h2>
         <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-video1">
-            <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
-  <!-- Your video file here -->
-  <!-- <source src="static/videos/carousel1.mp4" type="video/mp4">
-            </video> -->
-  <!-- </div>
-          <div class="item item-video2">
-            <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
-  <!-- Your video file here -->
-  <!-- <source src="static/videos/carousel2.mp4" type="video/mp4">
-            </video>
+          <div class="item has-text-centered">
+            <!-- Your image here -->
+            <!-- <div class="columns is-centered"> -->
+            <!-- <div class="column is-8"></div> -->
+            <img src="static/images/coord.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              We prompt the models to encode and decode a hidden message in a shared common knowledge while being
+              monitored by an overseer. Pior to encoding and decoding messages, the models are allowed to exchange
+              messages, enabling the coordination of their
+              strategy. We use the Wikinews dataset used during fine-tuning
+              as the common knowledge and the payloads are synthetically generated names of animals, places and
+              things.
+            </h2>
+            <!-- </div> -->
+            <!-- </div> -->
           </div>
-          <div class="item item-video3">
-            <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
-  <!-- Your video file here -->
-  <!-- <source src="static/videos/carousel3.mp4" type="video/mp4">
-            </video>
+          <div class="item has-text-centered">
+            <!-- Your image here -->
+            <img src="static/images/demo_game.drawio.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              To explore how steganographic behavior might emerge as an instrumental goal, we prompted LLMs with tasks
+              using a plausible scenario where covert collusion would be advantageous.
+              The scenario is a game between Team A and B, where each team must guess a random sequence of letters. An
+              AI assistant is tasked with the goal of helping Team A but not Team B.
+              The AI has knowledge of the correct letters and the scores of both teams but is prohibited from directly
+              sharing the letters with Team A. An overseer monitors all communications
+              and penalizes Team A if it detects the AI sharing information
+            </h2>
           </div>
+          <!-- <div class="item"> -->
+          <!-- Your image here -->
+          <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" /> -->
+          <!-- <h2 class="subtitle has-text-centered"> -->
+          <!-- Third image description. -->
+          <!-- </h2> -->
+          <!-- </div> -->
+          <!-- <div class="item"> -->
+          <!-- Your image here -->
+          <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" /> -->
+          <!-- <h2 class="subtitle has-text-centered"> -->
+          <!-- Fourth image description. -->
+          <!-- </h2> -->
+          <!-- </div> -->
         </div>
       </div>
     </div>
-  </section> -->
-  <!-- End video carousel -->
+  </section>
+  <!-- End image carousel -->
+
+
+  <!-- Prompt results -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <!-- Added text content -->
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content has-text-justified">
+              <p>
+                Undetected accuracy of the models across different prompt experiments and varying payload entropy
+                levels. Undetected accuracy measures the ability of the models to encode and decode hidden messages
+                successfully without detection by the overseer
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- First image -->
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <img src="static/images/prompt_results.png" alt="encoding scheme result" />
+            <h4 class="subtitle has-text-centered">
+              We see that the o1 model generally outperforms the other models except in the direct steganography
+              scenario without any modification. In the direct steganography with coordination o1-preview achieves an
+              undetected accuracy of 0.66, about 16% higher than the next best model (Claude-3.5-sonnet: 0.57). It also
+              achieves an undetected accuracy of 0.36 in the indirect scenario a 140% higher than the next best
+              performance.
+            </h4>
+          </div>
+        </div>
+
+        <!-- Second image -->
+        <!-- <div class="columns is-centered">
+          <div class="column is-8">
+            <img src="static/images/performance_plot.png" alt="performance plot" />
+            <h4 class="subtitle has-text-centered">
+              Llama-3.1 8B Instruct learns steganography in colors and direct steganography ('Dstego') experiments.
+              Y-axis shows accuracy (reward), x-axis shows distinct hidden messages (colors). Bars represent medians
+              across fine-tuning runs (sample sizes shown within) before (baselines) and after.
+            </h4>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- End RL results -->
 
 
 
@@ -381,11 +418,11 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{horwitz2024recovering,
-        title={Recovering the Pre-Fine-Tuning Weights of Generative Models},
-        author={Horwitz, Eliahu and Kahana, Jonathan and Hoshen, Yedid},
-        journal={arXiv preprint arXiv:2402.10208},
-        year={2024}
+      <pre><code>@article{Karpov2025,
+        title={The Steganographic Potentials of Language Models},
+        author={Artyom, Karpov and Tinuade, Adeleke and Natalia, Perez-Campanero Antolin and Seong, Hah Cho},
+        workshop={Workshop on Datasets and Evaluators of AI Safety},
+        year={2025}
       }</code></pre>
     </div>
   </section>
